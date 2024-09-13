@@ -28,6 +28,11 @@ export default [
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
+      // Disabilita la regola per l'import di React
+      'react/react-in-jsx-scope': 'off',
+      // Se necessario, puoi anche aggiungere questa regola
+      'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
+
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
