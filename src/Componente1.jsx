@@ -1,10 +1,10 @@
 
-const componente1 = () => {
+const Componente1 = () => {
     return (
         <div>
-            Componente1
+            <div> Ciao come stai? </div>
         </div>
     )
-};
+}
 
-export default componente1;
+export default Componente1   //questa dicitura mi permette di rinominare il componente come voglio 
